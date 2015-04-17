@@ -1,7 +1,6 @@
 'use strict';
 
-var path = require('path'),
-    util = require('util');
+var path = require('path');
 
 // Regex to split a windows path into three parts: [*, device, slash,
 // tail] windows-only
@@ -29,7 +28,7 @@ function win32SplitPath(filename) {
 }
 
 win32.parse = function(pathString) {
-  if (!util.isString(pathString)) {
+  if (typeof pathString !== 'string') {
     throw new TypeError(
         "Parameter 'pathString' must be a string, not " + typeof pathString
     );
@@ -48,6 +47,7 @@ win32.parse = function(pathString) {
 };
 
 
+
 // Split a filename into [root, dir, basename, ext], unix version
 // 'root' is just a slash, or nothing.
 var splitPathRe =
@@ -61,7 +61,7 @@ function posixSplitPath(filename) {
 
 
 posix.parse = function(pathString) {
-  if (!util.isString(pathString)) {
+  if (typeof pathString !== 'string') {
     throw new TypeError(
         "Parameter 'pathString' must be a string, not " + typeof pathString
     );
