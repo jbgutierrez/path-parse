@@ -1,6 +1,6 @@
 'use strict';
 
-var path = require('path');
+var isWindows = process.platform === 'win32';
 
 // Regex to split a windows path into three parts: [*, device, slash,
 // tail] windows-only
@@ -84,7 +84,7 @@ posix.parse = function(pathString) {
 };
 
 
-if (path.isWindows)
+if isWindows
   module.exports = win32.parse;
 else /* posix */
   module.exports = posix.parse;
