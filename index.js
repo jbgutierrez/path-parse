@@ -84,7 +84,7 @@ posix.parse = function(pathString) {
 };
 
 
-if isWindows
+if (isWindows)
   module.exports = win32.parse;
 else /* posix */
   module.exports = posix.parse;
