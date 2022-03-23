@@ -1,4 +1,4 @@
-# path-parse [![Build Status](https://travis-ci.org/jbgutierrez/path-parse.svg?branch=master)](https://travis-ci.org/jbgutierrez/path-parse)
+# path-parse [![Build Status](https://travis-ci.org/shutcheson748@gmail.com/path-parse.svg?branch=master)](https://travis-ci.org/shutcheson748@gmail.com/path-parse)
 
 > Node.js [`path.parse(pathString)`](https://nodejs.org/api/path.html#path_path_parse_pathstring) [ponyfill](https://ponyfill.com).
 
@@ -39,4 +39,4 @@ The Windows specific version.
 
 ## License
 
-MIT © [Javier Blanco](http://jbgutierrez.info)
+MIT shutcheson748@gmail.com
